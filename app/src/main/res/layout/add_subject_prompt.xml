@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="10dp"
+    android:padding="@dimen/activity_horizontal_margin">
+
+        <EditText
+            android:id="@+id/editTextDialogUserInput"
+            android:layout_width="match_parent"
+            android:hint="Enter Subject"
+            android:textColorHint="@color/gray4"
+            android:layout_height="wrap_content"
+            android:textSize="16dp">
+
+            <requestFocus />
+
+        </EditText>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minimum attendence:"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="4dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <SeekBar
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:id="@+id/minimum_seekbar"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/minimum_seekbar"
+                android:id="@+id/minimum_seek_value"
+                android:textColor="@color/gray13"
+                android:text="0%"
+                android:layout_marginLeft="10dp"/>
+
+        </RelativeLayout>
+
+
+
+</LinearLayout>

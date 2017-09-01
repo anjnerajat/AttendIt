@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        android:animateLayoutChanges="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/subject_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textSize="18dp"
+                android:layout_alignParentLeft="true"
+                android:maxLines="1"
+                android:ems="10" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/present"
+                android:layout_marginTop="10dp"
+                android:id="@+id/statusImage"
+                android:visibility="visible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Present"
+                android:id="@+id/present"
+                android:layout_below="@+id/subject_title"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:id="@+id/total"
+                android:layout_below="@+id/subject_title"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/present"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/absent"
+                android:text="Absent"
+                android:layout_below="@+id/subject_title"
+                android:layout_toRightOf="@+id/total"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancelled"
+                android:text="Cancelled"
+                android:layout_below="@+id/subject_title"
+                android:layout_toRightOf="@+id/absent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/present"
+                android:id="@+id/expandablePanel"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/presentButton"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/checkmarkbutton"
+                    android:layout_marginTop="10dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/absentButton"
+                    android:src="@drawable/deletebutton"
+                    android:layout_toRightOf="@+id/presentButton"
+                    android:layout_toEndOf="@+id/presentButton"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cancelButton"
+                    android:src="@drawable/disabled"
+                    android:layout_toRightOf="@+id/absentButton"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"/>
+
+            </RelativeLayout>
+
+            <com.example.dell.attendit.Classes.CircleDisplay
+                android:id="@+id/circleDisplay"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

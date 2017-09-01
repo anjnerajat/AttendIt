@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">AttendIt</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Welcome slides strings -->
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Exciting Events</string>
+    <string name="slide_1_desc">Including technical as well as cultural</string>
+
+    <string name="slide_2_title">Amazing Workshops</string>
+    <string name="slide_2_desc">From the best organisers</string>
+
+    <string name="slide_3_title">Night Shows</string>
+    <string name="slide_3_desc">An experience you will never forget</string>
+
+    <string name="slide_4_title">Informative Lectures</string>
+    <string name="slide_4_desc">From the best speakers</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
+    <string name="title_activity_subjects">Subjects</string>
+    <string name="title_activity_home">AttendIt</string>
+    <string name="title_activity_timetable">Timetable</string>
+
+    <string name="no_subject_string">No Subjects!\nAdd subjects to the list</string>
+    <string name="no_timetable_string">No Class today!\nAdd subjects for </string>
+
+
+</resources>
